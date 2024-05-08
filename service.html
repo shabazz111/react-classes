@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="hamMenu" class="hamMenu">
+        <a href="/">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/contact">Contact us</a>
+      </div>
+
+      <span>LOgo</span>
+
+      <div class="rightNav">
+        <a href="/">Home</a>
+        <a href="/service.html">Services</a>
+        <a href="/contact">Contact us</a>
+      </div>
+      <div onclick="handleOpenMenu()" class="rightMenu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </div>
+    </header>
+    <div class="headTitle">
+      <span>All Services</span>
+    </div>
+    <section id="cardSection" class="cardSection"></section>
+  </body>
+  <script src="/script.js"></script>
+  <script src="/dataFetch.js"></script>
+</html>
